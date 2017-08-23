@@ -10,30 +10,45 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     
 	<style >
-	    .container{
-	        max-with:800px;
-	        margin:0 auto;
-	        padding: 10px 20px;
-	    }
+	    body {
+          padding-top: 5rem;
+        }
+        .starter-template {
+          padding: 3rem 1.5rem;
+          text-align: center;
+        }
 	</style>
 </head>
 <body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Navbar</a>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+        
+      </div>
+    </nav>
+    
     <div class="container">
-    	<header>
-    	    <nav><a href="/">Home</a></nav>
-    	    <h1>Magento2 shell commands</h1>
-    	</header>
-    	<article>
-    	     <header>
-    	        <h3>Some of the magento commands</h3>
-    	    </header>
+        <div class="starter-template">
+            <h1>Magento2 shell commands</h1>
     	    <p>php bin / magento setup: upgrade</p>
             <p>php bin / magento setup: static-content: deploy</p>
             <p>php bin / magento cache: clean</p>
             <p>php bin / magento cache: flush</p>
             <p>php bin / magento indexer: reindex</p>
             <p>php bin / magento admin: user: unlock admin</p>
-    	</article>
+        </div>
 	</div>
 	  <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
